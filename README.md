@@ -50,6 +50,7 @@ Models that both perceive and generate across multiple modalities.
 
 | Title | In→Out | Native? | Venue | Date | Code | Demo |
 |:------|:------:|:-------:|:-----:|:----:|:----:|:----:|
+| ![Star](https://img.shields.io/github/stars/AIDASLab/Dynin-Omni.svg?style=social&label=Star) <br> [**Dynin-Omni: Omnimodal Unified Large Diffusion Language Model**](https://arxiv.org/abs/2604.00007) | T,I,A,V→T,I,S | ✅ | arXiv | 2026-03-09 | [Github](https://github.com/AIDASLab/Dynin-Omni) | [Demo](https://huggingface.co/spaces/AIDAS-Lab/Dynin-Omni) |
 | ![Star](https://img.shields.io/github/stars/QwenLM/Qwen3-Omni.svg?style=social&label=Star) <br> [**Qwen3-Omni Technical Report**](https://arxiv.org/abs/2509.17765) | T,I,A,V→T,S | ✅ | arXiv | 2025-09-22 | [Github](https://github.com/QwenLM/Qwen3-Omni) | [Demo](https://huggingface.co/spaces/Qwen/Qwen3-Omni-Demo) |
 | ![Star](https://img.shields.io/github/stars/baaivision/Emu3.5.svg?style=social&label=Star) <br> [**Emu3.5: Native Multimodal Models are World Learners**](https://arxiv.org/abs/2510.26583) | T,I,V→T,I,V | ✅ | arXiv | 2025-10-30 | [Github](https://github.com/baaivision/Emu3.5) | - |
 | [**NExT-OMNI: Towards Any-to-Any Omnimodal Foundation Models with Discrete Flow Matching**](https://arxiv.org/abs/2510.13721) | T,I,A,V→T,I,A,V | ✅ | arXiv | 2025-10-16 | - | - |
