@@ -71,6 +71,7 @@ Models that perceive many modalities but output text (and optionally speech).
 
 | Title | In→Out | Native? | Venue | Date | Code | Demo |
 |:------|:------:|:-------:|:-----:|:----:|:----:|:----:|
+| ![Star](https://img.shields.io/github/stars/TaoLiveAIGC/TLive-Omni.svg?style=social&label=Star) <br> [**TLive-Omni: An Omni-Modal Understanding Model for E-Commerce Live Streaming**](https://arxiv.org/abs/2608.20958) | T,I,A,V→T | ➖ | arXiv | 2026-08-21 | [Github](https://github.com/TaoLiveAIGC/TLive-Omni) | - |
 | ![Star](https://img.shields.io/github/stars/OpenBMB/MiniCPM-o.svg?style=social&label=Star) <br> [**MiniCPM-o 2.6: A GPT-4o Level MLLM on Your Phone**](https://github.com/OpenBMB/MiniCPM-o) | T,I,A,V→T,S | ➖ | Blog | 2025-01-13 | [Github](https://github.com/OpenBMB/MiniCPM-o) | [Demo](https://minicpm-omni.openbmb.cn/) |
 | ![Star](https://img.shields.io/github/stars/NVlabs/OmniVinci.svg?style=social&label=Star) <br> [**OmniVinci: Enhancing Architecture and Data for Omni-Modal Understanding LLM**](https://arxiv.org/abs/2510.15870) | T,I,A,V→T | ➖ | arXiv | 2025-10-17 | [Github](https://github.com/NVlabs/OmniVinci) | - |
 | ![Star](https://img.shields.io/github/stars/SenseTime-FVG/InteractiveOmni.svg?style=social&label=Star) <br> [**InteractiveOmni: A Unified Omni-modal Model for Audio-Visual Multi-turn Dialogue**](https://arxiv.org/abs/2510.13747) | T,I,A,V→T,S | ➖ | arXiv | 2025-10-15 | [Github](https://github.com/SenseTime-FVG/InteractiveOmni) | - |
