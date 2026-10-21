@@ -4,6 +4,8 @@
 
 **Continuous perception. Useful memory. Timely interaction.**
 
+**English** | [简体中文](README.zh-CN.md)
+
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 ![Papers](https://img.shields.io/badge/papers-77-blue)
 ![Updated](https://img.shields.io/badge/updated-2026--10--21-green)

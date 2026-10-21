@@ -18,3 +18,5 @@ Use four columns, with no modality abbreviations:
 For benchmarks, describe what the evaluation tests. Use `—` when no official resource is available. Avoid duplicate entries unless a paper introduces both a method and a benchmark.
 
 Before submitting, check dates, links, table formatting, and ordering. Update the README's paper count and update badge when needed; count distinct papers rather than table rows.
+
+Keep [English](README.md) and [简体中文](README.zh-CN.md) entries in sync when adding or correcting a paper.
