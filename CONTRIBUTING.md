@@ -1,6 +1,6 @@
 # Contributing
 
-Add papers on temporal understanding, memory, cross-modal synchronization, online reasoning and interaction, or benchmarks. Related text-agent memory, speech systems, and offline diagnostics belong in the labeled supporting tables.
+Add papers on understanding, memory, cross-modal synchronization, online reasoning and interaction, or benchmarks. Understanding includes scenes, objects, actions, spatial relations, sounds, and language. Related foundations, text-agent memory, speech systems, and offline diagnostics belong in the labeled supporting tables.
 
 1. Link the primary paper and verify its name, identifier, and **first preprint month** (YYYY.MM).
 2. Choose the best-fitting table and insert the entry in newest-first order.
@@ -20,3 +20,5 @@ For benchmarks, describe what the evaluation tests. Use `—` when no official r
 Before submitting, check dates, links, table formatting, and ordering. Update the README's paper count and update badge when needed; count distinct papers rather than table rows.
 
 Keep [English](README.md) and [简体中文](README.zh-CN.md) entries in sync when adding or correcting a paper.
+
+Keep supporting sections expanded by default with `<details open>`.

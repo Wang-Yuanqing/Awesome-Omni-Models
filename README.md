@@ -7,7 +7,7 @@
 **English** | [简体中文](README.zh-CN.md)
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Papers](https://img.shields.io/badge/papers-77-blue)
+![Papers](https://img.shields.io/badge/papers-110-blue)
 ![Updated](https://img.shields.io/badge/updated-2026--10--21-green)
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange)](CONTRIBUTING.md)
 
@@ -15,23 +15,58 @@
 
 Our goal is AI that follows the world as it unfolds: understanding **text, images, video, and audio**, remembering what matters, and responding through **text and speech**. We focus on systems that update their understanding as observations arrive, using only evidence available so far and keeping memory and response delay manageable.
 
-[Temporal understanding](#temporal-understanding) · [Memory](#memory) · [Cross-modal synchronization](#cross-modal-synchronization) · [Online reasoning and interaction](#online-reasoning-and-interaction) · [Benchmarks](#benchmarks)
+[Understanding](#understanding) · [Memory](#memory) · [Cross-modal synchronization](#cross-modal-synchronization) · [Online reasoning and interaction](#online-reasoning-and-interaction) · [Benchmarks](#benchmarks)
 
 Dates show the first preprint month; entries are newest first within each table.
 
-## Temporal Understanding
+## Understanding
 
-**What happened, in what order, and what changed?**
+**What is happening, and how do we interpret scenes, objects, spatial relations, sounds, and language?**
 
 | Date | Paper | Core idea | Resources |
 | :--- | :--- | :--- | :--- |
+| 2026.09 | [**MOBA-VL**](https://arxiv.org/abs/2609.38428) | Learns event-aligned live esports commentary through telemetry-supervised multi-turn reinforcement learning. | [Project](https://moba-vl.github.io/) |
+| 2026.09 | [**TempoGround**](https://arxiv.org/abs/2609.02359) | Tracks object presence and identity for consistent streaming 2D/3D language grounding. | — |
+| 2026.08 | [**Stream3Dv2**](https://arxiv.org/abs/2608.21136) | **Perception:** RGB-D fusion supports streaming open-vocabulary 3D scene segmentation. | [Author repository](https://github.com/SubmissionsIn/Stream3D) |
 | 2026.08 | [**StreamOPD**](https://arxiv.org/abs/2608.16320) | Distills causal responses using privileged spatiotemporal cues during training. | [Code](https://github.com/UniX-AI-Lab/StreamOPD) · [Project](https://unix-ai-lab.github.io/StreamOPD/) |
+| 2026.07 | [**VideoChat3**](https://arxiv.org/abs/2607.14935) | Combines spatiotemporal visual encoding and adaptive resolution for generalist streaming understanding. | [Code](https://github.com/MCG-NJU/VideoChat3) · [Project](https://mcg-nju.github.io/VideoChat3/) |
+| 2026.06 | [**Stream3D-VLM**](https://arxiv.org/abs/2606.06891) | Incrementally integrates geometry priors for online spatial reasoning and grounding. | [Code](https://github.com/hanxunyu/Stream3D-VLM) · [Project](https://stream3d-vlm.github.io/) |
+| 2026.05 | [**StreamOV**](https://arxiv.org/abs/2605.25621) | Uses bounded audiovisual evidence memory for online reasoning and proactive responses. | — |
+| 2026.04 | [**Qwen3.5-Omni**](https://arxiv.org/abs/2604.15804) | Streams chunked audiovisual observations into grounded captions and spoken responses. | [Overview](https://qwen.ai/blog?id=qwen3.5-omni) |
 | 2026.03 | [**ColorTrigger**](https://arxiv.org/abs/2603.22466) | Preserves continuous grayscale observations while requesting color when informative. | [Project](https://lvgd.github.io/ColorTrigger/) |
+| 2026.03 | [**S2GS**](https://arxiv.org/abs/2603.14232) | **Perception:** Updates 3D semantic fields online while maintaining instance identities. | [Project](https://stdcoutzrh.github.io/projects/s2gs/) |
 | 2026.03 | [**OmniStream**](https://arxiv.org/abs/2603.12265) | Causal visual backbone learns temporal, spatial, and language-aligned representations. | [Code](https://github.com/Go2Heart/OmniStream) |
+| 2026.02 | [**ART-STVG**](https://arxiv.org/abs/2602.23294) | **Sequential grounding:** Localizes referred objects and event boundaries; not real-time. | [Repository](https://github.com/HengLan/ART-STVG) |
+| 2025.12 | [**Streamo**](https://arxiv.org/abs/2512.21334) | Unifies online action understanding, event captioning, temporal grounding, and question answering. | [Code](https://github.com/maifoundations/Streamo) · [Project](https://jiaerxia.github.io/Streamo/) |
+| 2025.11 | [**LiveStar**](https://arxiv.org/abs/2511.05299) | Aligns evolving video content with coherent narration and adaptive response-silence decisions. | [Code](https://github.com/sotayang/LiveStar) |
+| 2025.10 | [**video-SALMONN S**](https://arxiv.org/abs/2510.11129) | Consolidates audiovisual streams into fast-weight memory for long-horizon understanding. | [Code branch](https://github.com/bytedance/SALMONN/tree/video-salmonn-S) |
+| 2025.10 | [**StreamingVLM**](https://arxiv.org/abs/2510.09608) | Aligns overlapped-chunk training with cached inference for continuous video commentary. | [Code](https://github.com/mit-han-lab/streaming-vlm) |
 | 2025.09 | [**OpenHOUSE**](https://arxiv.org/abs/2509.12145) | Detects action boundaries and describes events at multiple temporal scales. | — |
+| 2025.09 | [**Time-Scaling SSMs**](https://arxiv.org/abs/2509.03426) | Propagates transfer states across segments to localize and caption events online. | — |
+| 2025.08 | [**OVG-HQ**](https://arxiv.org/abs/2508.11903) | Locates streaming video segments using text, image, and video queries. | [Code and data](https://github.com/maojiaqi2324/OVG-HQ) |
+| 2025.04 | [**StreamFormer**](https://arxiv.org/abs/2504.20041) | Causal video encoder learns action semantics, temporal grounding, and spatial segmentation. | [Code](https://github.com/Go2Heart/StreamFormer) · [Project](https://go2heart.github.io/streamformer/) |
 | 2025.04 | [**TimeChat-Online**](https://arxiv.org/abs/2504.17343) | Drops redundant visual tokens while retaining changes across incoming frames. | [Code](https://github.com/yaolinli/TimeChat-Online) · [Project](https://timechat-online.github.io/) |
 | 2025.04 | [**LiveCC**](https://arxiv.org/abs/2504.16030) | Learns temporal alignment from timestamped transcripts for live video commentary. | [Code](https://github.com/showlab/livecc) · [Project](https://showlab.github.io/livecc/) |
+| 2025.03 | [**StreamMind**](https://arxiv.org/abs/2503.06220) | Preserves event features and invokes language reasoning when relevant events occur. | [Code and data](https://github.com/xinding-bot/StreamMind) |
 | 2024.06 | [**VideoLLM-online**](https://arxiv.org/abs/2406.11816) | Learns streaming dialogue and when to respond within arriving video. | [Code](https://github.com/showlab/videollm-online) |
+
+<details open>
+<summary>Related understanding foundations</summary>
+
+Offline audiovisual reasoning, general hearing, and image-grounded speech interaction.
+
+| Date | Paper | Core idea | Resources |
+| :--- | :--- | :--- | :--- |
+| 2026.09 | [**OmniReasoning**](https://arxiv.org/abs/2609.39490) | Trains joint audiovisual reasoning with grounded clues and modality-factored self-distillation. | [Code](https://github.com/PKU-VaLuE-Lab/OmniReasoning) · [Project](https://pku-value-lab.github.io/OmniReasoning-Homepage/) |
+| 2026.08 | [**ST-Omni-R1**](https://arxiv.org/abs/2608.09435) | Grounds sound identity, location, distance, and motion in panoramic video. | — |
+| 2026.07 | [**SALMONN-2**](https://arxiv.org/abs/2607.17079) | Fuses self-supervised audio layers for speech, sound, music, and paralinguistics. | [Code branch](https://github.com/bytedance/SALMONN/tree/salmonn2) |
+| 2026.05 | [**LatentOmni**](https://arxiv.org/abs/2605.22012) | Interleaves textual reasoning with temporally aligned audiovisual latent states. | — |
+| 2026.04 | [**Nemotron 3 Nano Omni**](https://arxiv.org/abs/2604.24954) | Compresses temporal visual tokens for efficient long audiovisual comprehension. | [Model](https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16) |
+| 2025.10 | [**OmniVinci**](https://arxiv.org/abs/2510.15870) | Learns aligned audiovisual representations with relative and absolute temporal encoding. | [Code](https://github.com/NVlabs/OmniVinci) · [Project](https://nvlabs.github.io/OmniVinci/) |
+| 2025.06 | [**video-SALMONN 2 / 2+**](https://arxiv.org/abs/2506.15220) | Optimizes faithful audiovisual event captions and transfers improvements to question answering. | [Code](https://github.com/bytedance/video-SALMONN-2) |
+| 2025.03 | [**MoshiVis**](https://arxiv.org/abs/2503.15633) | Adds gated visual adaptation to full-duplex speech conversations about images. | [Code](https://github.com/kyutai-labs/moshivis) |
+
+</details>
 
 ## Memory
 
@@ -64,7 +99,7 @@ Dates show the first preprint month; entries are newest first within each table.
 | 2025.08 | [**M3-Agent**](https://arxiv.org/abs/2508.09736) | Builds entity-centric audiovisual episodic and semantic memory for iterative reasoning. | [Code](https://github.com/ByteDance-Seed/m3-agent) |
 | 2025.01 | [**StreamChat · Xiong et al.**](https://arxiv.org/abs/2501.13468) | Hierarchical visual memory and parallel scheduling support multi-turn streaming dialogue. | [Code](https://github.com/hmxiong/StreamChat) |
 
-<details>
+<details open>
 <summary>Related text-agent memory</summary>
 
 | Date | Paper | Core idea | Resources |
@@ -85,11 +120,13 @@ Dates show the first preprint month; entries are newest first within each table.
 | 2026.09 | [**Realtime-Venus**](https://arxiv.org/abs/2609.13814) | Full-duplex audiovisual interaction delegates background tasks asynchronously to agents. | [Code](https://github.com/inclusionAI/Realtime-Venus) |
 | 2026.09 | [**Gander**](https://arxiv.org/abs/2609.08977) | Connects continuous audiovisual interaction with an asynchronous agent loop. | [Code](https://github.com/Omni-Interaction-Gander/Omni-Interaction-Agent) |
 | 2026.08 | [**TLive-Omni**](https://arxiv.org/abs/2608.20958) | Aligns timestamped audiovisual evidence for text-based live-commerce understanding. | [Code](https://github.com/TaoLiveAIGC/TLive-Omni) |
+| 2026.08 | [**Aero Realtime**](https://arxiv.org/abs/2608.08469) | Aligns streaming audiovisual inputs with text responses while perception continues. | [Code](https://github.com/kcz358/aero-realtime) · [Project](https://kcz358.github.io/aero-realtime/) |
 | 2026.06 | [**DuplexOmni**](https://arxiv.org/abs/2606.09186) | Streams audiovisual interaction alongside a separate reasoning and tool-use layer. | — |
 | 2026.04 | [**MiniCPM-o 4.5**](https://arxiv.org/abs/2604.27393) | Aligns continuous audiovisual input and speech output for full-duplex interaction. | [Code](https://github.com/OpenBMB/MiniCPM-V) |
 | 2026.01 | [**ROMA**](https://arxiv.org/abs/2601.10323) | Synchronizes audio and video chunks with separate decisions about speaking. | [Code](https://github.com/Eureka-Maggie/ROMA) · [Project](https://eureka-maggie.github.io/ROMA_show/) |
 | 2025.09 | [**Qwen3-Omni**](https://arxiv.org/abs/2509.17765) | Combines timestamp alignment, chunked multimodal input, and streaming speech synthesis. | [Code](https://github.com/QwenLM/Qwen3-Omni) |
 | 2025.06 | [**Stream-Omni**](https://arxiv.org/abs/2506.13642) | Aligns vision and speech with language for vision-grounded spoken interaction. | [Code](https://github.com/ictnlp/Stream-Omni) |
+| 2025.06 | [**RoboEgo**](https://arxiv.org/abs/2506.01934) | Processes streaming visual and speech context while generating synchronized responses. | — |
 | 2025.03 | [**Qwen2.5-Omni**](https://arxiv.org/abs/2503.20215) | Time-aligned audiovisual chunks support understanding with text and speech responses. | [Code](https://github.com/QwenLM/Qwen2.5-Omni) |
 
 ## Online Reasoning and Interaction
@@ -100,10 +137,13 @@ Dates show the first preprint month; entries are newest first within each table.
 | :--- | :--- | :--- | :--- |
 | 2026.10 | [**OneStreamer**](https://arxiv.org/abs/2610.01762) | Jointly learns factual caption memory and evidence-timed proactive responses. | [Code](https://github.com/MCG-NJU/OneStreamer) · [Project](https://mcg-nju.github.io/OneStreamer/) |
 | 2026.06 | [**LyraV**](https://arxiv.org/abs/2606.06991) | Interleaves arriving frames and text decoding within real-time frame budgets. | — |
+| 2026.03 | [**StreamingClaw**](https://arxiv.org/abs/2603.22120) | Connects live multimodal perception, shared memory, proactive reasoning, and tools. | [Project](https://jackyu6.github.io/StreamingClaw-Page/) |
+| 2026.03 | [**Em-Garde**](https://arxiv.org/abs/2603.19054) | Matches query-derived visual proposals against incoming observations to trigger responses. | [Code](https://github.com/air-embodied-brain/Em-Garde) |
 | 2026.03 | [**ThinkStream**](https://arxiv.org/abs/2603.12938) | Interleaves watching, reasoning, and speaking decisions with compressed reasoning memory. | [Code](https://github.com/CASIA-IVA-Lab/ThinkStream) |
 | 2026.03 | [**Think While Watching**](https://arxiv.org/abs/2603.11896) | Segment-level causal memory overlaps video perception and multi-turn reasoning. | [Code](https://github.com/wanglu-cs/Think_While_Watching) |
 | 2026.03 | [**VST**](https://arxiv.org/abs/2603.12262) | Reasons over incoming clips and accumulates thoughts for later responses. | [Code](https://github.com/1ranGuan/VST) |
 | 2026.03 | [**StreamReady**](https://arxiv.org/abs/2603.08620) | Predicts when sufficient evidence has arrived to answer a question. | [Code](https://github.com/sacrcv/StreamReady) · [Project](https://sacrcv.github.io/StreamReady-website/) |
+| 2026.03 | [**Proact-VL**](https://arxiv.org/abs/2603.03447) | Learns when to comment or guide while processing continuous game streams. | [Project](https://proact-vl.github.io/) |
 | 2025.12 | [**MMDuet2**](https://arxiv.org/abs/2512.06810) | Uses multi-turn reinforcement learning to improve proactive timing and responses. | [Code](https://github.com/yellow-binary-tree/MMDuet2) |
 | 2025.08 | [**StreamAgent**](https://arxiv.org/abs/2508.01875) | Anticipates future evidence and adjusts visual attention through task-driven planning. | — |
 | 2025.05 | [**StreamBridge**](https://arxiv.org/abs/2505.05467) | Adds compressed dialogue memory and lightweight triggers to offline video models. | [Code](https://github.com/apple-aiml-research/ml-streambridge) |
@@ -112,7 +152,7 @@ Dates show the first preprint month; entries are newest first within each table.
 | 2024.12 | [**VideoChat-Online**](https://arxiv.org/abs/2501.00584) | Pyramid memory and interleaved dialogue training support online video conversations. | [Code](https://github.com/MCG-NJU/VideoChat-Online) |
 | 2024.11 | [**MMDuet**](https://arxiv.org/abs/2411.17991) | Learns response timing and informativeness through incremental video-text dialogue. | [Code](https://github.com/yellow-binary-tree/MMDuet) |
 
-<details>
+<details open>
 <summary>Related speech and agent interaction</summary>
 
 | Date | Paper | Core idea | Resources |
@@ -130,9 +170,14 @@ Dates show the first preprint month; entries are newest first within each table.
 
 | Date | Benchmark | What it tests | Resources |
 | :--- | :--- | :--- | :--- |
+| 2026.10 | [**DIVE**](https://arxiv.org/abs/2610.28405) | Full-duplex visual engagement, response revision, participation decisions, and timing. | — |
 | 2026.10 | [**FastBench**](https://arxiv.org/abs/2610.12427) | Fast events and fine temporal perception in high-dynamic video streams. | [Code](https://github.com/Ashone3/FastBench) |
+| 2026.06 | [**EgoSAT**](https://arxiv.org/abs/2606.24422) | Egocentric past, present, and future reasoning with answerability and confidence diagnostics. | [Code](https://github.com/leiyj23/EgoSAT) · [Project](https://leiyj23.github.io/EgoSAT/) |
 | 2026.05 | [**IPIBench**](https://arxiv.org/abs/2605.27074) | Proactive monitoring, changing user requests, and mixed reactive-proactive interaction. | [Code](https://github.com/lijinzhao30/IPI) · [Project](https://lijinzhao30.github.io/IPIBench/) |
+| 2026.05 | [**SOVBench**](https://arxiv.org/abs/2605.25621) | Audiovisual multi-turn reasoning and evidence-timed response triggering. | — |
+| 2026.05 | [**OmniPro**](https://arxiv.org/abs/2605.18577) | Joint audiovisual understanding and proactive timing, with sound-dependence diagnostics. | [Code](https://github.com/RuixiangZhao/OmniPro) · [Project](https://ruixiangzhao.github.io/OmniPro/) |
 | 2026.03 | [**RIVER**](https://arxiv.org/abs/2603.03985) | Retrospective memory, live perception, and proactive anticipation in dialogue. | [Code](https://github.com/OpenGVLab/RIVER) |
+| 2026.03 | [**Live Gaming Benchmark**](https://arxiv.org/abs/2603.03447) | Game commentary, co-commentary, and guidance under continuous observation. | [Project](https://proact-vl.github.io/) |
 | 2025.07 | [**ProactiveVideoQA**](https://arxiv.org/abs/2507.09313) | Proactive answer quality and timing, evaluated jointly with PAUC. | [Code](https://github.com/yellow-binary-tree/ProactiveVideoQA) |
 | 2025.07 | [**OST-Bench**](https://arxiv.org/abs/2507.07984) | Online spatial reasoning over incrementally acquired observations and historical context. | [Project](https://rbler1234.github.io/OSTBench.github.io/) |
 | 2025.05 | [**RTV-Bench**](https://arxiv.org/abs/2505.02064) | Continuous perception and reasoning through questions at successive timestamps. | [Code](https://github.com/LJungang/RTV-Bench) |
@@ -143,7 +188,7 @@ Dates show the first preprint month; entries are newest first within each table.
 | 2024.12 | [**OVBench**](https://arxiv.org/abs/2501.00584) | Past memory, present perception, and future prediction during online viewing. | [Code](https://github.com/MCG-NJU/VideoChat-Online) |
 | 2024.11 | [**StreamingBench**](https://arxiv.org/abs/2411.03628) | Timestamped visual, audiovisual, and contextual understanding across streaming tasks. | [Code](https://github.com/THUNLP-MT/StreamingBench) |
 
-<details>
+<details open>
 <summary>Supporting offline diagnostics and agent timing</summary>
 
 | Date | Benchmark | What it tests | Resources |
@@ -161,7 +206,7 @@ Dates show the first preprint month; entries are newest first within each table.
 
 [Contribute](CONTRIBUTING.md) · Contact: [yuanqing.wang@utdallas.edu](mailto:yuanqing.wang@utdallas.edu)
 
-<details>
+<details open>
 <summary>Cite this repository</summary>
 
 If you find this repository helpful, please consider citing it:
