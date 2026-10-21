@@ -212,7 +212,7 @@ For questions, suggestions, or collaboration, contact **Yuanqing Wang** at [yuan
 
 ## License
 
-Unless otherwise noted, new original documentation and copyrightable curation in this repository are licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE). Content previously made available under CC0 remains available under those terms; this change does not revoke earlier CC0 permissions. Linked papers, datasets, models, and software retain their respective licenses.
+Unless otherwise noted, the original documentation and copyrightable curation in this repository are licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE). Linked papers, datasets, models, and software retain their respective licenses.
 
 When sharing or adapting material covered by CC BY 4.0, provide appropriate credit, link to the license, and indicate any changes. The BibTeX above is a suggested academic citation format. See the [official CC BY 4.0 summary](https://creativecommons.org/licenses/by/4.0/).
 
